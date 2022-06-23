@@ -1,6 +1,6 @@
 "
-" Maintainer: Gomez <dogpls.Protonmail.com>
-" Last change: 2021 Nov 6
+" Maintainer: Gomez
+" Last change: 2022 June
 "
 "
 
@@ -144,8 +144,10 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
     Plug 'jiangmiao/auto-pairs'
     " Vim Icons
     " Plug 'ryanoasis/vim-devicons'
-
-    " Themes
+    
+    """"""""""
+    " Themes "
+    """"""""""
     Plug 'rafi/awesome-vim-colorschemes'
     Plug 'flazz/vim-colorschemes'
     Plug 'chriskempson/base16-vim'
@@ -153,13 +155,10 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
     Plug 'vim-airline/vim-airline' 
     Plug 'vim-airline/vim-airline-themes'                                                                 
     call plug#end()
-
     " Set the background tone.
     set background=dark
-
     " enable true colors support
     set termguicolors
-
     " Set the color scheme.                                          
     colorscheme base16-gruvbox-dark-soft
 
@@ -175,10 +174,6 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
-
-
-
 
 " }}}
 
