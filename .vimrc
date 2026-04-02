@@ -1,5 +1,5 @@
 " Maintainer: Gomez
-" Last change: 2023 April
+" Last change: 2026 April
 "
 "O|||||||O   
 "
@@ -130,20 +130,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 " Open-Browser.vim - Open URL with Vim.
 Plug 'tyru/open-browser.vim'
-" Linting, ALE (Asynchronous Lint Engine) is a plugin providing linting (syntax checking and semantic errors
-Plug 'w0rp/ale'
-" Statusline
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Supertab is a vim plugin which allows you to use <Tab> for all your insert completion needs (:help ins-completion).
-Plug 'ervandew/supertab'
-" Emmet 
-Plug 'mattn/emmet-vim'
-" Prettier / post install (yarn install | npm install) then load plugin only for editing supported files
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-" Auto Pairs Brackets
-Plug 'jiangmiao/auto-pairs'
-" VimWiki is a personal wiki for Vim
-Plug 'vimwiki/vimwiki'
 
 """"""""""
 " Themes "
