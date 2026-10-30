@@ -9,9 +9,3 @@ These are my dotfiles, I like to keep things simple.
 
 ### License
 Creative Commons
-
-### Contact
-
-    Email: anthony@anthonygomez.net
-    GitHub: https://github.com/dogpls
-    Portfolio: anthonygomez.net
