@@ -85,23 +85,6 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-" Vim hardcodes background color erase even if the terminfo file does
-" not contain bce (not to mention that libvte based terminals
-" incorrectly contain bce in their terminfo files). This causes
-" incorrect background rendering when using a color theme with a
-" background color.
-    let &t_ut=''
-
-" General colors
-    if has('gui_running') || has('nvim')
-        hi Normal 		guifg=#f6f3e8 guibg=#242424
-    els
-" Set the terminal default background and foreground colors, thereby
-" improving performance by not needing to set these colors on empty cells.
-    hi Normal guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
-    let &t_ti = &t_ti . "\033]10;#f6f3e8\007\033]11;#242424\007"
-    let &t_te = &t_te . "\033]110\007\033]111\007"
-    endif
 
 " }}}
 
@@ -120,32 +103,9 @@ endif
 
 call plug#begin("~/.vim/plugged")
 
-" File System Explorer
-Plug 'junegunn/fzf', {'do': { -> fzf#install() } }       
-Plug 'junegunn/fzf.vim'
-Plug 'francoiscabrol/ranger.vim'
-" Tim Pope
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-repeat'
-" Open-Browser.vim - Open URL with Vim.
-Plug 'tyru/open-browser.vim'
-
-""""""""""
-" Themes "
-""""""""""
-"Plug 'https://github.com/sainnhe/gruvbox-material'
-"Plug 'https://github.com/morhetz/gruvbox'
-"Plug 'rafi/awesome-vim-colorschemes'
-"Plug 'flazz/vim-colorschemes'
+Plug 'https://github.com/morhetz/gruvbox'
 Plug 'chriskempson/base16-vim'
-
-" Statusline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Vim Icons
-Plug 'ryanoasis/vim-devicons'
+Plug 'ervandew/supertab'
 
 call plug#end()
 
@@ -159,7 +119,7 @@ let g:gruvbox_transparent_bg=1
 let g:gruvbox_italic=1
 
 " Set the color scheme
-colorscheme base16-gruvbox-light-soft
+colorscheme base16-gruvbox-dark-hard
 
     " }}}
 " MAPPINGS --------------------------------------------------------------- {{{
